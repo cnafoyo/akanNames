@@ -2,7 +2,7 @@
 ## Getting Started
 Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born.
 ## Prerequisites
-You need internet connection. Visit; 
+You need internet connection. Visit; https://cnafoyo.github.io/akanNames/
 #  Akan Names
 ####  The application takes a user's birthday and calculates the day of the week they were born and then depending on their gender outputs their Akan Name.
 
@@ -11,12 +11,14 @@ You need internet connection. Visit;
 ## Description
 Akan names are derived from Ghanian culture. Frequently in Ghana, children are given their first name as a 'day name' which corresponds to the day in the week they were born. The app takes a user's birthday and calulates the day of the week they were born and then depending on their gender outputs their Akan Name.
 ## Setup/Installation Requirements
-* This is a great place
-* to list setup instructions
-* in a simple
-* easy-to-understand
-* format
-{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? Do I need to install any dependencies? How should I set up my databases? Is there other code this app depends on?}
+
+Visit; https://cnafoyo.github.io/akanNames/
+
+* Select date of birth, month and year.
+* Select gender
+* Submit form
+* Your Akan name will pop up with the day of the week you were born.
+
 
 ## Technologies Used
 Technologies used include html,css and JavaScript
