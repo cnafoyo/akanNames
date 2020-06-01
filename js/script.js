@@ -55,10 +55,10 @@ function showAkanName(day,month,year,gender){
  ]
 
  if(gender === "male"){
-   var nameArray = male[dayOfWeek-1];
+   var nameArray = male[dayOfWeek == 0?6:dayOfWeek-1];
    alert ("You were born on a "+ nameArray.day + " and your Akan name is " + nameArray.name);
  }else{
-   var nameArray = female[dayOfWeek-1];
+   var nameArray = female[dayOfWeek == 0?6:dayOfWeek-1];
    alert ("You were born on a "+ nameArray.day + " and your Akan name is " + nameArray.name);
  }
 }
