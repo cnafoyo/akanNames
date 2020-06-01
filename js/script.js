@@ -8,6 +8,13 @@
 var dayElement = document.getElementById("day");
 var monthElement = document.getElementById("month");
 var yearElement = document.getElementById("year");
+
+day = dayElement.options[dayElement.selectedIndex].value;
+
+month = monthElement.options[monthElement.selectedIndex].value;
+
+year = yearElement.options[yearElement.selectedIndex].value;
+
 function showAkanName(day,month,year,gender){
 
 	 var dayOfWeek = Math.trunc(getDayOfWeek(day,month,year));
