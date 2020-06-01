@@ -3,6 +3,12 @@
   var month = "";
   var year = "";
   var gender = "";
+
+
+var dayElement = document.getElementById("day");
+var monthElement = document.getElementById("month");
+var yearElement = document.getElementById("year");
+
 }
   function getDayOfWeek(day,month,year){
 
