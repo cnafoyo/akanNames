@@ -15,6 +15,8 @@ month = monthElement.options[monthElement.selectedIndex].value;
 
 year = yearElement.options[yearElement.selectedIndex].value;
 
+ gender = document.querySelector('input[name=gender]:checked').value;
+
 function showAkanName(day,month,year,gender){
 
 	 var dayOfWeek = Math.trunc(getDayOfWeek(day,month,year));
