@@ -17,6 +17,16 @@ year = yearElement.options[yearElement.selectedIndex].value;
 
  gender = document.querySelector('input[name=gender]:checked').value;
 
+ if(gender === ""){
+		 alert("You must select gender");
+	 }else if(parseInt(day)<=0 || parseInt(day) > 31){
+		 alert("check if you entered right value for day");
+	 }else if(parseInt(month)<=0 || parseInt(month) > 12){
+		 alert("Check if you eneterd right value for month");
+	 }else{
+		 showAkanName(day,month,year,gender);
+	 }
+}
 function showAkanName(day,month,year,gender){
 
 	 var dayOfWeek = Math.trunc(getDayOfWeek(day,month,year));
