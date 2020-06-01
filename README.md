@@ -26,7 +26,7 @@ Technologies used include html,css and JavaScript
 Contact; 254721729021
 email; cnafayo@gmail.com
 ### License
-
+MIT Licence
 
 Copyright (c) 2020 
   
