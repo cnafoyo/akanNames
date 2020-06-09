@@ -1,4 +1,4 @@
- function getFormValues(){
+function getFormValues(){
 
   var day ="";
   var month = "";
@@ -10,15 +10,22 @@
   var monthElement = document.getElementById("month");
   var yearElement = document.getElementById("year");
 
-  day = dayElement.options[dayElement.selectedIndex].value;
+
+  day=dayElement.options[dayElement.selectedIndex].value;
 
   month = monthElement.options[monthElement.selectedIndex].value;
 
   year = yearElement.options[yearElement.selectedIndex].value;
 
-  gender = document.querySelector('input[name=gender]:checked').value;
+  if(document.getElementById('male').checked){
+    gender='male';
+  }else if(document.getElementById('female').checked){
+    gender='female';
+  }else{
+    gender='NONE';
+  }
 
-  if(gender === ""){
+  if(gender === "NONE"){
     alert("You must select gender");
   }else if(parseInt(day)<=0 || parseInt(day) > 31){
     alert("check if you entered right value for day");
@@ -30,12 +37,8 @@
 
 }
 
-function showAkanName(day,month,year,gender){
-
-  var dayOfWeek = Math.trunc(getDayOfWeek(day,month,year));
-
-  //alert(dayOfWeek);
-
+function showAkanName(dateSelected,month,year,gender){
+  var dayOfWeek = Math.trunc(getDayOfWeek(dateSelected,month,year));
   var male = [
   {"day":"Sunday","name":"Kwasi"},
   {"day":"Monday","name":"Kwadwo"},
@@ -57,10 +60,10 @@ function showAkanName(day,month,year,gender){
   ]
 
   if(gender === "male"){
-    var nameArray = male[dayOfWeek == 0?6:dayOfWeek-1];
+    var nameArray = male[dayOfWeek-1];
     alert ("You were born on a "+ nameArray.day + " and your Akan name is " + nameArray.name);
   }else{
-    var nameArray = female[dayOfWeek == 0?6:dayOfWeek-1];
+    var nameArray = female[dayOfWeek-1];
     alert ("You were born on a "+ nameArray.day + " and your Akan name is " + nameArray.name);
   }
 }
